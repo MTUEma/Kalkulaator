@@ -1,4 +1,4 @@
-Tiimiliikmed
+Tiimiliikmed:
 
 
 Ingmar Treiberk 
