@@ -3,3 +3,23 @@
     width: 356px;
     background-color: #7CC67C;
 }
+.hrs {
+    width: 61px;
+    height: 42px;
+    background-color: #DC143C;
+    float: left;
+
+}
+.hrs_input {
+    height: 42px;
+    width: 257px;
+    background-color: blue;
+    
+}
+.menu {
+    height: 42px;
+    width: 38px;
+    background-color: #DC143C;
+    float: right;
+    
+}
