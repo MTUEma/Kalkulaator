@@ -5,7 +5,7 @@
 
 (live site)
 
-### Figma prototüübi
+### Figma prototüüp
 
 https://www.figma.com/file/GNHSoIIPQZM2NxTqv1dU7z/calculator?node-id=30%3A79
 
