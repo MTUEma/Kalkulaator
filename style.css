@@ -62,6 +62,7 @@
     display: flex;
     padding-top: 36px;
     padding-left: 73px;
+    flex-direction: column;
 
 }
 .hours {
@@ -80,6 +81,9 @@ html {
     font-size: 24px;
     height: 20px;
     flex-direction: column;
+    padding-bottom: 10px;
+    font-family: Roboto;
+
 }
 .hrs{
     width: 73px;
@@ -87,5 +91,28 @@ html {
     background: #FFFCE7;
     border: 1px solid #D8CE7A;
     box-sizing: border-box;
+
+}.equals {
+    width: 16px;
+    height: 25px;
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.total_amount{
+    width: 153px;
+    height: 40px;
+    background: #FFFCE7;
+    border: 1px solid #D8CE7A;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+.button {
+    width: 86px;
+    height: 33px;
+    background: #FFE073;
+
 
 }
