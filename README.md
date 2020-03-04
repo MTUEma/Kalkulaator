@@ -2,9 +2,13 @@
 
 
 Ingmar Treiberk 
+
 Kevin Reinov
+
 Sander Aru 
+
 Karl Jäme 
+
 Karoliina Pilden
 
 #Figma link: 
