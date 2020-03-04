@@ -1,19 +1,32 @@
-Tiimiliikmed:
+# MTUEma
 
 
-Ingmar Treiberk 
+### Siin on meie tiimi tehtud lehekülg: 
 
-Kevin Reinov
+(live site)
 
-Sander Aru 
+### Siit leiad meie figma prototüübi 
 
-Karl Jäme 
+https://www.figma.com/file/GNHSoIIPQZM2NxTqv1dU7z/calculator?node-id=30%3A79
 
-Karoliina Pilden
+### Kommunikatsioon
 
-Figma link:
+  Suhtlemiseks kasutasime põhiliselt **Slacki** ja **Githubi**.
 
+### Programmeerimine
 
-https://www.figma.com/file/GNHSoIIPQZM2NxTqv1dU7z/calculator?node-id=0%3A1
+  Põhiline töövahend oli **Visual Studio Code**.
+  
+  ## Tiimist
 
-Live site 
+### Meeskond koosnes viiest liikmest:
+
+* Ingmar Treiberk 
+
+* Kevin Reinov
+
+* Sander Aru 
+
+* Karl Jäme 
+
+* Karoliina Pilden
