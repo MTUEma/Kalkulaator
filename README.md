@@ -1,11 +1,11 @@
 # MTUEma
 
 
-### Siin on meie tiimi tehtud lehekülg: 
+### Live lehekülg
 
 (live site)
 
-### Siit leiad meie figma prototüübi 
+### Figma prototüübi
 
 https://www.figma.com/file/GNHSoIIPQZM2NxTqv1dU7z/calculator?node-id=30%3A79
 
