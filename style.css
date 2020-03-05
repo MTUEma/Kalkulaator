@@ -167,8 +167,9 @@ html {
 }
 .history{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40%;
-    heigth: 100px;
     background-color: red;
     flex-direction: row;
 }
@@ -179,3 +180,10 @@ html {
     margin: auto;  
 }
 
+.history_box{
+    width: 450px;
+    height: 628px;
+    background-color: #6C5B7B;
+    
+    
+}
