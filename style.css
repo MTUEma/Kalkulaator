@@ -7,6 +7,11 @@
     
 }
 
+#big {
+    border: 1px solid #635356;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
 
 .hours {
     background-color: #FEF6B3;
@@ -26,9 +31,7 @@
 
 .container {
     display: flex;
-    border: 1px solid #635356;
-    box-sizing: border-box;
-    border-radius: 6px;
+
 }
 
 .job {
