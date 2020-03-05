@@ -74,7 +74,7 @@ function setOcupation(hourly, id) {
     button = document.getElementById(id)
     button.style.backgroundColor = "#8AE1FC"
 
-    var selectedOcupation = document.getElementById(id).innerHTML
+    selectedOcupation = document.getElementById(id).innerHTML
     console.log(selectedOcupation)
 
     selectedOcupationId = id
@@ -120,8 +120,9 @@ function add() {
 
     getTotal.innerHTML = 'Kokku: ' + total.toFixed(2) + ' €'
     
-    var history_box = document.getElementById('history_box')
-    history = document.createElement(div)
+    var history_box = document.getElementById('history')
+    var history = document.createElement('div')
+    console.log(history)
     history.classList.add('history_item')
     history.innerHTML = selectedOcupation + ' ' + sallary + ' €'
 
