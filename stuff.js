@@ -31,6 +31,7 @@ function getData() {
                 return
             }
 
+
             hourly = hourly[Object.keys(hourly)[1]]
             hourly = hourly[Object.keys(hourly)[0]]
             hourly = hourly[0]
