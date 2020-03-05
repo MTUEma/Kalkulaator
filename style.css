@@ -30,7 +30,7 @@
     border: 1px solid #635356;
     box-sizing: border-box;
     border-radius: 6px;
-    height: 1200px;
+    height: 670px;
 }
 
 .job {
@@ -66,7 +66,7 @@
 
 }
 html {
-    width: 910px;
+    width: 782px;
     background-color: #FEF6B3;
 }
 .multiply{
@@ -85,7 +85,7 @@ html {
 .hrs{
     width: 73px;
     height: 40px;
-    background: #FFFCE7;
+    
     border: 1px solid #D8CE7A;
     box-sizing: border-box;
     text-align: center;
@@ -107,7 +107,7 @@ html {
 .total_amount{
     width: 153px;
     height: 40px;
-    background: #FFFCE7;
+ 
     border: 1px solid #D8CE7A;
     box-sizing: border-box;
     padding-bottom: 10px;
@@ -142,15 +142,23 @@ html {
 
 }
 .number{
-    background: #FFFCE7;
+    
     border: 1px solid #AD959B;
     box-sizing: border-box;
     border-radius: 6px;
-    width: 206px;
+    width: 150px;
     height: 41px;
     padding-left: 20px;
 
 }
 .total_box_emty{
     width: 10px;
+}
+.history{
+    display: flex;
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    flex-direction: row;
 }
