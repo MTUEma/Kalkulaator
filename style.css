@@ -12,7 +12,7 @@
 .scroll {
     width: 220px;
     height: 276px;
-    overflow: auto;
+
     background-color: red;
     
  
@@ -30,6 +30,7 @@
     border: 1px solid #635356;
     box-sizing: border-box;
     border-radius: 6px;
+    height: 1200px;
 }
 
 .job {
@@ -46,10 +47,9 @@
     flex-direction: column;
 }
 .space {
-    height: 30px;
+    height: 25px;
 }
 .calculator{
-    display: flex;
     padding-top: 36px;
     padding-left: 73px;
 
@@ -75,7 +75,9 @@ html {
     padding-top: 10px;
     font-family: Roboto;
     padding-right: 10px;
-    padding-left: 10px;
+ 
+    padding-top: 25px;
+    padding-bottom: 25px;
     
 
 
@@ -98,8 +100,9 @@ html {
     font-size: 24px;
     line-height: 28px;
     padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 5px;
+  
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .total_amount{
     width: 153px;
@@ -122,7 +125,7 @@ html {
     display: flex;
     width: 650px;
     height: 80px;
-    padding-top: 15px;
+
 }
 
 .infocontainer{
@@ -135,7 +138,7 @@ html {
     padding-top: 10px;
     font-size: 36px;
     float: left;
-    padding-left: 134px;
+    padding-top: 25px;
 
 }
 .number{
