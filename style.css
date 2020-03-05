@@ -170,7 +170,7 @@ html {
     justify-content: center;
     align-items: center;
     width: 40%;
-    background-color: red;
+    background-color: #FEF6B3;
     flex-direction: row;
 }
 
@@ -183,7 +183,10 @@ html {
 .history_box{
     width: 450px;
     height: 628px;
-    background-color: #6C5B7B;
+    background-color: #FFE073;
+    border: 1px solid #635356;
+    box-sizing: border-box;
+    border-radius: 6px;
     
     
 }
