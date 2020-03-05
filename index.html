@@ -35,33 +35,47 @@
                     <button class="job" id="70" onclick="setOcupation(this.value, this.id)">Logopeed</button>
                 </div>
             </div>
+            <div class="calculator_box">
             
                 <div class="calculator">
                     <div class="inputfield">
-                    <input class="hours" id="hours" type="number" oninput="calculate()" placeholder="Tunnid">*
-                    <div class="hrs" id="hrs">€/h</div>
+                    <input class="hours" id="hours" type="number" oninput="calculate()" placeholder="Tunnid">
+                    <div>
+                        <div class="mult">*</div>
+                        <div class="equals">=</div>
+                    </div>
+                    <div>
+                        <div class="hrs" id="hrs">€/h</div>
+                        <div class="total_amount" id="total_amount"></div>
+                    </div>
+                    
+                    
                     </div>
                     <div class="equalsTotal">
-                        <div class="equals">=</div>
-                        <div class="total_amount" id="total_amount"></div>
+                        
+                        
                     </div>
                     
                     <div class="space"></div>
                     <button class="button" type="button" onclick="add()">Lisa kirje</button>
+                    <div class="history_box">
+                        <div class="history"></div>
+                    </div>
                     <div class="total_box">
                     <div class="total" id="total" value="0">Kokku:
                         <div class="total_box_emty"></div>
                         <div class="number" id="total"></div>
                     </div>
                     </div>
+                    
                 </div>
+                
+            </div>
+                
                 
 
         </div> 
     </div>
-    </div>
-    <div class="history">
-        <div class="history_box"></div>
     </div>
 </div>
 
