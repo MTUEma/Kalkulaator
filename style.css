@@ -7,11 +7,6 @@
     
 }
 
-#big {
-    border: 1px solid #635356;
-    box-sizing: border-box;
-    border-radius: 6px;
-}
 
 .hours {
     background-color: #FEF6B3;
@@ -31,6 +26,7 @@
 
 .container {
     display: flex;
+    flex-direction: column;
 
 
 }
@@ -122,5 +118,9 @@ html {
     width: 10px;
     height: 10px;
     background-color: rebeccapurple;
+}
+
+.infocontainer{
+    display: flex;
 }
 
