@@ -3,7 +3,9 @@ var hourly
 var ocupation
 var button
 var selectedOcupationId
+var selectedOcupation
 var total = 0
+var pay = 0
 
 function getData() {
     fetch('http://andmebaas.stat.ee/sdmx-json/data/PA633/DBL213+DBL401+DBL415+57+58+70+DBL77+DBL85+DBL113+DBL114+DBL120+DBL245+DBL248+DBL252+DBL275+DBL285+DBL302+DBL313+DBL315+DBL343+DBL359+DBL272.3.1/all?startTime=2014&endTime=2014')
@@ -72,7 +74,11 @@ function setOcupation(hourly, id) {
     button = document.getElementById(id)
     button.style.backgroundColor = "#8AE1FC"
 
+    var selectedOcupation = document.getElementById(id).innerHTML
+    console.log(selectedOcupation)
+
     selectedOcupationId = id
+    calculate()
 
 }
 
@@ -94,6 +100,15 @@ function calculate() {
 
 }
 
+function reset () {
+    resetColor = document.getElementsByClassName('job')
+
+    for(var i = 0; i < resetColor.length; i++){
+		resetColor[i].style.backgroundColor = "#FFFCE7"
+    }
+
+
+}
 
 function add() {
     calculate()
@@ -104,9 +119,15 @@ function add() {
     console.log(total)
 
     getTotal.innerHTML = 'Kokku: ' + total.toFixed(2) + ' €'
+
     
+
+
+
+
     console.log(sallary)
     console.log(selectedOcupationId)
+    reset()
     
 
 }
