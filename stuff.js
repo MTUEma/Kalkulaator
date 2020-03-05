@@ -1,32 +1,80 @@
+var i = 0
 var hourly
+var ocupation
 var button
 
-function setOcupation(id) {
-    fetch('http://andmebaas.stat.ee/sdmx-json/data/PA633/'+ id +'.3.1/all?startTime=2014&endTime=2014')
+function getData() {
+    fetch('http://andmebaas.stat.ee/sdmx-json/data/PA633/DBL213+DBL401+DBL415+57+58+70+DBL77+DBL85+DBL113+DBL114+DBL120+DBL245+DBL248+DBL252+DBL275+DBL285+DBL302+DBL313+DBL315+DBL343+DBL359+DBL272.3.1/all?startTime=2014&endTime=2014')
     .then(response => {
-        if (button == undefined) {
-            button = document.getElementById(id)
-        }
-        window.button.style.backgroundColor = "#FFFCE7"
-        button = document.getElementById(id)
-        button.style.backgroundColor = "#8AE1FC"
         return response.json()
     })
     .then(data => {
+        const scroll = document.getElementById('scroll')
         var hourly = data.dataSets[0].series;
-        hourly = hourly[Object.keys(hourly)[0]]
-        hourly = hourly[Object.keys(hourly)[1]]
-        hourly = hourly[0]
-        hourly = hourly[0].toFixed(2)
-        
-        var hrs = document.getElementById("hrs")
+        var ocupation = data.structure
+        ocupation = ocupation[Object.keys(ocupation)[3]]
+        ocupation = ocupation[Object.keys(ocupation)[0]]
+        ocupation = ocupation[0]
+        ocupation = ocupation[Object.keys(ocupation)[3]]
+        //console.log(scroll)
+        hourly = Object.values(hourly)
+        hourly.forEach(hourly => {            
+            i = i+1
+            var idCluster = ocupation[i]
+            id = idCluster[Object.keys(idCluster)[0]]
+            var name = idCluster[Object.keys(idCluster)[1]]
+            //console.log(name)
 
-        hrs.innerHTML = hourly + " €/h"
-        console.log(id)
+            var button = document.getElementById(id)
 
+            if (!button) {
+                return
+            }
+
+
+            hourly = hourly[Object.keys(hourly)[1]]
+            hourly = hourly[Object.keys(hourly)[0]]
+            hourly = hourly[0]
+
+            button.value = hourly
+            button.name = name
+            
+            //console.log(button)
+            //console.log(hourly)
+        });
+
+        ocupation.forEach(t => {
+            
+            ocupation = ocupation[Object.keys(ocupation)[0]]
+            //console.log(t)
+            //console.log(i)
+        })
     })
 }
-//window.onload = getValue
+window.onload = getData
+
+function setOcupation(hourly, id) {
+    var hrs = document.getElementById('hrs')
+    hourly = parseFloat(hourly)
+    hourly = hourly.toFixed(2)
+    hrs.setAttribute("value", hourly)
+    console.log(hourly)
+    hrs.innerHTML = hourly + " €/h"
+    
+    if (button == undefined) {
+        button = document.getElementById(id)
+    }
+    
+    window.button.style.backgroundColor = "#FFFCE7"
+    button = document.getElementById(id)
+    button.style.backgroundColor = "#8AE1FC"
+
+}
+
+
+
+//hourly = hourly[0]
+//hourly = hourly[0].toFixed(2)
 
 //document.getElementsByClassName("job").addEventListener("click", setOcupation(this.id))
 
