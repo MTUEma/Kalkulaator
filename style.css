@@ -5,18 +5,13 @@
     background-color: #6C5B7B;
     float: right;
     
-}
-
-
-.hours {
-    background-color: #FEF6B3;
-    float: right;
+    
 }
 
 
 .scroll {
     width: 220px;
-    height: 218px;
+    height: 276px;
     overflow: auto;
     background-color: red;
     
@@ -41,7 +36,7 @@
     background: #FFFCE7;
     border: 1px solid #D8CE7A;
     box-sizing: border-box;
-    width: 218px;
+    width: 100%;
     height: 33px;
 }
 .info{
@@ -61,15 +56,16 @@
 
 }
 .hours {
-    width: 153px;
+    width: 73px;
     height: 40px;
     background: #FFFCE7;
     border: 1px solid #D8CE7A;
     box-sizing: border-box;
+    
 
 }
 html {
-    width: 700px;
+    width: 610px;
     background-color: #FEF6B3;
 }
 .multiply{
@@ -86,6 +82,9 @@ html {
     background: #FFFCE7;
     border: 1px solid #D8CE7A;
     box-sizing: border-box;
+    text-align: center;
+    padding-top: 9.5px;
+
 
 }.equals {
     width: 16px;
@@ -113,14 +112,36 @@ html {
 }
 
 
-.total{
+.total_box{
     display: flex;
-    width: 10px;
-    height: 10px;
-    background-color: rebeccapurple;
+    width: 650px;
+    height: 80px;
+    padding-top: 15px;
 }
 
 .infocontainer{
     display: flex;
 }
+.total{
+    display: flex;
+    width: 650px;
+    height: 35px;
+    padding-top: 10px;
+    font-size: 36px;
+    float: left;
+    padding-left: 134px;
 
+}
+.number{
+    background: #FFFCE7;
+    border: 1px solid #AD959B;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 206px;
+    height: 41px;
+    padding-left: 20px;
+
+}
+.total_box_emty{
+    width: 10px;
+}
