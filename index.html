@@ -15,7 +15,7 @@
             <div class="infocontainer">
             <div class="info">
                 <div class="scroll" id="scroll">
-                    <button class="job" id="DBL359" onclick="setOcupation(this.value, this.id, this.id)">Õmbleja</button>
+                    <button class="job" id="DBL359" onclick="setOcupation(this.value, this.id)">Õmbleja</button>
                     <button class="job" id="DBL401" onclick="setOcupation(this.value, this.id)">Autojuht</button>
                     <button class="job" id="DBL415" onclick="setOcupation(this.value, this.id)">Koristaja</button>
                     <button class="job" id="DBL77" onclick="setOcupation(this.value, this.id)">Lasteaiakasvataja</button>
@@ -37,15 +37,15 @@
             </div>
             
                 <div class="calculator">
-                    <input class="hours" type="number" placeholder="Tunnid"><br>
+                    <input class="hours" id="hours" type="number" placeholder="Tunnid" oninput="calculate()"><br>
                     <div class="multiply">*</div>
-                    <div class="hrs" id="hrs">33 €/h</div>
+                    <div class="hrs" id="hrs" value="0">€/h</div>
                     <div class="equals">=</div>
-                    <div class="total_amount"></div>
+                    <div class="total_amount" id="total_amount"></div>
                     <div class="space"></div>
-                    <button class="button" type="button" >Lisa kirje</button>
+                    <button class="button" type="button" onclick="add()">Lisa kirje</button>
                     <div class="total_box">
-                    <div class="total">Kokku:
+                    <div class="total" id="total" value="0">Kokku:
                         <div class="total_box_emty"></div>
                         <div class="number"></div>
                     </div>
