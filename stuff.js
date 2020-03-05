@@ -21,7 +21,7 @@ function setOcupation(id) {
         
         var hrs = document.getElementById("hrs")
 
-        hrs.innerHTML = hourly
+        hrs.innerHTML = hourly + " €/h"
         console.log(id)
 
     })
