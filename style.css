@@ -26,6 +26,11 @@
 
 .container {
     display: flex;
+
+
+}
+.big{
+    display: flex;
     border: 1px solid #635356;
     box-sizing: border-box;
     border-radius: 6px;
@@ -105,3 +110,12 @@ html {
 
 
 }
+
+
+.total{
+    display: flex;
+    width: 10px;
+    height: 10px;
+    background-color: rebeccapurple;
+}
+
