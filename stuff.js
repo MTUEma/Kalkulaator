@@ -119,7 +119,13 @@ function add() {
     console.log(total)
 
     getTotal.innerHTML = 'Kokku: ' + total.toFixed(2) + ' €'
+    
+    var history_box = document.getElementById('history_box')
+    history = document.createElement(div)
+    history.classList.add('history_item')
+    history.innerHTML = selectedOcupation + ' ' + sallary + ' €'
 
+    history_box.append(history)
     
 
 
