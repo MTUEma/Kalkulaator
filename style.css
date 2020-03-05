@@ -37,9 +37,7 @@ body {
 }
 .big{
     display: flex;
-    border: 1px solid #635356;
-    box-sizing: border-box;
-    border-radius: 6px;
+
     height: 670px;
     width: 80%;
 }
@@ -58,7 +56,8 @@ body {
     flex-direction: column;
 }
 .space {
-    height: 25px;
+    height: 5px;
+    width: 160px;
     float: left;
 }
 .calculator{
@@ -93,10 +92,10 @@ html {
     width: 73px;
     height: 40px;
     
-    border: 1px solid #D8CE7A;
+  
     box-sizing: border-box;
     text-align: center;
-    padding-top: 9.5px;
+
     
 
 
@@ -107,21 +106,24 @@ html {
     height: 25px;
     font-family: Roboto;
     font-size: 24px;
-    padding-top: 10px;
+    padding-top: 40px;
+
 }
 .total_amount{
     width: 153px;
     height: 40px;
  
-    border: 1px solid #D8CE7A;
+    
     box-sizing: border-box;
     padding-bottom: 10px;
     float: left;
+    padding-left: 20px;
 }
 .button {
     width: 86px;
     height: 33px;
     background: #FFE073;
+    
 
 
 }
@@ -131,6 +133,7 @@ html {
     display: flex;
     width: 650px;
     height: 80px;
+    
 
 }
 
@@ -160,14 +163,7 @@ html {
 .total_box_emty{
     width: 10px;
 }
-.history{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    background-color: #FEF6B3;
-    flex-direction: row;
-}
+
 
 .main {
     display: flex;
@@ -176,13 +172,14 @@ html {
 }
 
 .history_box{
-    width: 450px;
-    height: 628px;
-    background-color: #FFE073;
-    border: 1px solid #635356;
-    box-sizing: border-box;
-    border-radius: 6px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: FEF6B3;
+    flex-direction: row;
+    width: 270px;
+    height: 400px;
+
     
 }
 
@@ -193,4 +190,19 @@ html {
 .equalsTotal {
     display: flex;
     margin-left: 65px;
+}
+.calculator_box{
+    display: flex;
+    flex-direction: row;
+
+}
+.history{
+    width: 350px;
+    height: 328px;
+    background-color: #FFE073;
+    overflow: auto;
+
+}
+.mult{
+    font-size: 20px;
 }
