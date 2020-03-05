@@ -38,7 +38,7 @@
             
                 <div class="calculator">
                     <div class="inputfield">
-                    <input class="hours" id="hours" type="number"  placeholder="Tunnid">*
+                    <input class="hours" id="hours" type="number" oninput="calculate()" placeholder="Tunnid">*
                     <div class="hrs" id="hrs">€/h</div>
                     </div>
                     <div class="equalsTotal">
@@ -51,7 +51,7 @@
                     <div class="total_box">
                     <div class="total" id="total" value="0">Kokku:
                         <div class="total_box_emty"></div>
-                        <div class="number"></div>
+                        <div class="number" id="total"></div>
                     </div>
                     </div>
                 </div>

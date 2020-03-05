@@ -85,6 +85,7 @@ function calculate() {
     var hours = parseFloat(getHoursValue)
     var sallary = pay * hours
     sallary = sallary.toFixed(2)
+    console.log(sallary)
 
     var workPay = document.getElementById('total_amount')
     workPay.innerHTML = sallary + ' €'
