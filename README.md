@@ -3,7 +3,7 @@
 
 ### Live lehekülg
 
-(live site)
+http://kalku.sanderaru.com/
 
 ### Figma prototüüp
 
