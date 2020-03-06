@@ -22,11 +22,7 @@ body {
 .scroll {
     width: 220px;
     height: 276px;
-
-    background-color: red;
-    
- 
-    
+    background-color: red; 
 }
 
 .container {
@@ -40,6 +36,18 @@ body {
 
     height: 670px;
     width: 80%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .job {
@@ -72,6 +80,9 @@ body {
     background: #FFFCE7;
     border: 1px solid #D8CE7A;
     box-sizing: border-box;
+    text-align: center;
+    font-size: large;
+    
     
 
 
@@ -86,15 +97,16 @@ html {
     padding-top: 10px;
     font-family: Roboto;
     padding-right: 10px;
+    font-weight: bold;
 
 }
 .hrs{
     width: 73px;
     height: 40px;
-    
-  
     box-sizing: border-box;
     text-align: center;
+    font-weight: bold;
+    font-size: larger;
 
     
 
@@ -113,12 +125,12 @@ html {
 .total_amount{
     width: 153px;
     height: 40px;
- 
-    
     box-sizing: border-box;
     padding-bottom: 10px;
     float: left;
     padding-left: 20px;
+    font-size: x-large;
+    font-weight: 600;
 }
 .button {
     width: 86px;
@@ -207,4 +219,14 @@ html {
 .mult {
     font-size: 20px;
     text-align: center;
+}
+
+.history_item {
+    width: 100%;
+    text-align: left;
+    font-size: larger;
+    border-bottom: #FFFCE7 2px solid;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
